@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "highonhoney",
+	"version": "${version}",
+	"name": "High On Honey",
+	"description": "Ever find yourself playing technical modpacks struggling to keep yourself immersed in minecraft's reality? Look no further, High On Honeys goal is to do as such with preexisting mechanics not yet flushed out.!",
+	"authors": [
+		"Iceboundjester8"
+	],
+	"contact": {
+		"homepage": "N/A",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/highonhoney/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.iceboundjester8.hiohon.HighOnHoney"
+		],
+		"fabric-datagen": [
+			"net.iceboundjester8.hiohon.HighOnHoneyDataGenerator"
+		],
+		"client": [
+			"net.iceboundjester8.hiohon.HighOnHoneyModClient"
+		]
+	},
+	"mixins": [
+		"highonhoney.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
