@@ -2,6 +2,7 @@ package net.iceboundjester8.hiohon;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.iceboundjester8.hiohon.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class HighOnHoney implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
