@@ -19,7 +19,7 @@ public class ModItems {
         HighOnHoney.LOGGER.info("Registering Mod Items for " + HighOnHoney.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(COPPER_SHEET),
+            entries.add(COPPER_SHEET);
             entries.add(COPPER_PIPE);
 
         });
